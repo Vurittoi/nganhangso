@@ -15,7 +15,7 @@ dist/
 *.mdf
 *.ldf
 
-# Local database dump contains personal and account data
+# Keep the local database export private; use the sanitized demo script in database/
 /DigitalBanking.sql
 
 # Generated native binaries accidentally placed at the project root

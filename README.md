@@ -6,7 +6,11 @@
 
 - Node.js
 - SQL Server và ODBC Driver 18 for SQL Server
-- Cơ sở dữ liệu `DigitalBanking` do bạn tự tạo; file dump chứa dữ liệu cá nhân không được đưa lên repository
+- SQL Server Management Studio (SSMS) để chạy script mẫu `database/DigitalBanking.example.sql`
+
+Script SQL trong repository chỉ có dữ liệu demo giả. Tài khoản mẫu: `admin` / `demo123`. Không dùng script hoặc thông tin đăng nhập demo trong môi trường thật.
+
+File dump cá nhân `DigitalBanking.sql` được giữ ở máy và cố ý không đưa lên GitHub.
 
 ## Chạy backend
 
@@ -20,6 +24,8 @@ node backend/server.js
 ```
 
 Nếu cần dùng connection string riêng, đặt biến `SQL_CONNECTION_STRING` thay cho `SQL_SERVER` và `SQL_DATABASE`.
+
+Trước khi khởi động backend lần đầu, mở `database/DigitalBanking.example.sql` trong SSMS và chạy script để tạo cơ sở dữ liệu demo.
 
 ## Chạy frontend
 
