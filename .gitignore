@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.local
+*.log
+*.sqlite
+*.db
+*.mdf
+*.ldf
+
+# Local database dump contains personal and account data
+/DigitalBanking.sql
+
+# Generated native binaries accidentally placed at the project root
+/.data
+/.pdata
+/.rdata
+/.reloc
+/.text
+/lightningcss.win32-x64-msvc/
+/oxlint.win32-x64-msvc/
+/rolldown-binding.win32-x64-msvc/

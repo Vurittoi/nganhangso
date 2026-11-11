@@ -1,0 +1,399 @@
+.account-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+/* SIDEBAR */
+
+.account-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e7eaf0;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 10px 35px;
+}
+
+.account-logo-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #172033;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.account-logo strong {
+  display: block;
+  font-size: 17px;
+}
+
+.account-logo span {
+  display: block;
+  color: #8b93a5;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.account-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.account-menu button,
+.account-logout {
+  border: none;
+  background: transparent;
+  padding: 13px 14px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 14px;
+  color: #667085;
+  cursor: pointer;
+  text-align: left;
+}
+
+.account-menu button span,
+.account-logout span {
+  font-size: 18px;
+}
+
+.account-menu button:hover {
+  background: #f4f6fa;
+}
+
+.account-menu button.active {
+  background: #eef2f7;
+  color: #172033;
+  font-weight: 600;
+}
+
+.account-logout {
+  margin-top: auto;
+}
+
+.account-logout:hover {
+  background: #f4f6fa;
+}
+
+/* MAIN */
+
+.account-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 45px;
+}
+
+/* HEADER */
+
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.account-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.account-header p {
+  margin: 7px 0 0;
+  color: #8b93a5;
+  font-size: 14px;
+}
+
+.account-user {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.account-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #172033;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.account-user strong {
+  display: block;
+  font-size: 13px;
+}
+
+.account-user span {
+  display: block;
+  color: #8b93a5;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* PROFILE */
+
+.profile-card {
+  background: white;
+  border: 1px solid #e7eaf0;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #eef2f7;
+  color: #172033;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.profile-info p {
+  margin: 7px 0 0;
+  color: #8b93a5;
+  font-size: 12px;
+}
+
+.profile-role {
+  color: #172033;
+  font-weight: 600;
+}
+
+.profile-dot {
+  margin: 0 8px;
+}
+
+/* CARD */
+
+.account-card {
+  background: white;
+  border: 1px solid #e7eaf0;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.account-card-header {
+  padding: 22px 24px;
+  border-bottom: 1px solid #edf0f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-card-header h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.account-card-header p {
+  margin: 5px 0 0;
+  color: #8b93a5;
+  font-size: 12px;
+}
+
+.account-status {
+  background: #edf7f1;
+  color: #258653;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+/* INFORMATION */
+
+.account-information-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 5px 24px 15px;
+}
+
+.information-item {
+  padding: 17px 10px 17px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.information-item:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.information-item span {
+  display: block;
+  color: #8b93a5;
+  font-size: 11px;
+  margin-bottom: 7px;
+}
+
+.information-item strong {
+  display: block;
+  font-size: 13px;
+}
+
+.information-item.full-width {
+  grid-column: 1 / -1;
+}
+
+/* BANK ACCOUNT */
+
+.bank-account-highlight {
+  margin: 20px 24px 10px;
+  padding: 22px;
+  border-radius: 12px;
+  background: #dadde2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bank-account-highlight span {
+  display: block;
+  color: #585a5e;
+  font-size: 11px;
+  margin-bottom: 7px;
+}
+
+.bank-account-highlight strong {
+  font-size: 18px;
+  color:#2d2f2e;
+  letter-spacing: 0.4px;
+}
+
+.balance-section {
+  text-align: right;
+}
+
+.balance-section strong {
+  font-size: 21px;
+}
+
+.active-text {
+  color: #258653;
+}
+
+/* BACK BUTTON */
+
+.back-dashboard-button {
+  border: 1px solid #dfe3ea;
+  background: white;
+  color: #172033;
+  padding: 11px 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.back-dashboard-button:hover {
+  background: #f4f6f8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .account-sidebar {
+    width: 72px;
+    padding: 20px 10px;
+  }
+
+  .account-logo div:not(.account-logo-icon),
+  .account-menu button,
+  .account-logout {
+    font-size: 0;
+  }
+
+  .account-menu button span,
+  .account-logout span {
+    font-size: 20px;
+  }
+
+  .account-logo {
+    justify-content: center;
+    padding: 0 0 30px;
+  }
+
+  .account-menu button {
+    justify-content: center;
+  }
+
+  .account-logout {
+    justify-content: center;
+  }
+
+  .account-main {
+    padding: 25px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .account-header {
+    align-items: flex-start;
+  }
+
+  .account-header h1 {
+    font-size: 23px;
+  }
+
+  .account-user {
+    display: none;
+  }
+
+  .account-information-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .information-item:nth-last-child(-n + 2) {
+    border-bottom: 1px solid #edf0f4;
+  }
+
+  .information-item:last-child {
+    border-bottom: none;
+  }
+
+  .bank-account-highlight {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .balance-section {
+    text-align: left;
+  }
+}
